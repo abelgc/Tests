@@ -17,10 +17,10 @@ namespace TestNinja.UnitTests
             //Arrange
             var reservation = new Reservation();
             //Act
-            var restult = reservation.CanBeCancelledBy(new User { IsAdmin = true });
+            var result = reservation.CanBeCancelledBy(new User { IsAdmin = true });
             //Assert
             //Assert.IsTrue(result);
-            restult.Should().Be(true);
+            result.Should().Be(true);
         }
 
         [Test]
