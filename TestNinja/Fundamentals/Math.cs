@@ -19,6 +19,10 @@ namespace TestNinja.Fundamentals
         {
             for (var i = 0; i <= limit; i++)
                 if (i % 2 != 0)
+                    // YIELD Iteration.
+                    //It creates a state machine "under the covers"
+                    //that remembers where you were on each additional
+                    //cycle of the function and picks up from there.
                     yield return i;
         }
     }
