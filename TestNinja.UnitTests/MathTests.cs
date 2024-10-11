@@ -7,8 +7,9 @@ namespace TestNinja.UnitTests
     {    //Setup will be called bf run every test
         //teardown is gonna be called after each test
         private TestNinja.Fundamentals.Math _math;
+
         [SetUp]
-        public void SetUp()
+        public void MathSetUp()
         {
             _math = new TestNinja.Fundamentals.Math();
         }
@@ -22,6 +23,19 @@ namespace TestNinja.UnitTests
             var result = _math.Add(8, 100);
             //Assert
             result.Should().Be(108);
+        }
+
+        [TestCase(2, 1, 2)]
+        [TestCase(1, 2, 2)]
+        [TestCase(2, 2, 2)]
+        public void MaxWhenCalledReturnGreatherArgument(int a, int b, int expected)
+        {
+            //Arrange
+
+            //Act
+            var result = _math.Max(a, b);
+            //Assert
+            result.Should().Be(expected);
         }
 
         [Test]
@@ -47,7 +61,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        public void Max_FirstArgIsEqual_ReturnFirstArg()
+        public void Max_ArgsAreEqual_ReturnSameArg()
         {
             //Arrange
 
