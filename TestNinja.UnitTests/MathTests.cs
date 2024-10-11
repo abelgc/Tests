@@ -39,6 +39,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        [Ignore("Not using TestCase")]
         public void Max_FirstArgIsGreater_ReturnFirstArg()
         {
             //Arrange
@@ -50,6 +51,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        [Ignore("Not using TestCase")]
         public void Max_FirstArgIsSmaller_ReturnSecondArg()
         {
             //Arrange
@@ -61,6 +63,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
+        [Ignore("Not using TestCase")]
         public void Max_ArgsAreEqual_ReturnSameArg()
         {
             //Arrange
@@ -69,6 +72,20 @@ namespace TestNinja.UnitTests
             var result = _math.Max(100, 100);
             //Assert
             result.Should().Be(100);
+        }
+
+        [Test]
+        public void GetOddNumbersWhenLimitIsGreatherThanZeroReturnsNumbersUpToLimit()
+        {
+            //Arrange
+
+            //Act
+            var result = _math.GetOddNumbers(5);
+
+            //Assert
+            result.Should().NotBeEmpty().And.HaveCount(3);
+
+
         }
     }
 }
