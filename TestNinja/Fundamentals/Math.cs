@@ -19,10 +19,9 @@ namespace TestNinja.Fundamentals
         {
             for (var i = 0; i <= limit; i++)
                 if (i % 2 != 0)
-                    // YIELD Iteration.
-                    //It creates a state machine "under the covers"
-                    //that remembers where you were on each additional
-                    //cycle of the function and picks up from there.
+                    //State Machine: The yield keyword creates a state machine behind the scenes. 
+                    //This state machine keeps track of the current position in the code and the current state of local variables.
+                    //The yield keyword allows you to create an iterator method that can return values one at a time.
                     yield return i;
         }
     }

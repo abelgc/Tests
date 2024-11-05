@@ -17,14 +17,22 @@ namespace TestNinja.UnitTests
             //Assert
             result.Should().NotBeNull().And.BeOfType<NotFound>();
             result.Should().BeOfType<NotFound>();
-            result.Should().BeAssignableTo<ActionResult>();
-
+            // typeoOf requires the type NotFound
+            // InstanceOf requires type NotFound or its derivatives
         }
 
         [Test]
         public void GetCustomerWhenIdNotZeroReturnNotFound()
         {
-
+            //Arrange
+            //Act
+            var controller = new CustomerController();
+            var result = controller.GetCustomer(1);
+            //Assert
+            result.Should().BeAssignableTo<ActionResult>();
+            result.Should().BeAssignableTo<Ok>();
+            // typeoOf requires the type NotFound
+            // InstanceOf requires type NotFound or its derivatives
         }
     }
 }
