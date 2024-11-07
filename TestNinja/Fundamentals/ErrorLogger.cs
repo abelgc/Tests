@@ -7,7 +7,7 @@ namespace TestNinja.Fundamentals
     {
         public string LastError { get; set; }
 
-        public event EventHandler<Guid> ErrorLogged;
+        public event EventHandler<Guid> ErrorLoggedEvent;
 
         public void Log(string error)
         {
@@ -19,7 +19,7 @@ namespace TestNinja.Fundamentals
             // Write the log to a storage
             // ...
 
-            ErrorLogged?.Invoke(this, Guid.NewGuid());
+            ErrorLoggedEvent?.Invoke(this, Guid.NewGuid());
 
         }
     }
