@@ -39,3 +39,17 @@ C:\Dev3\Tests\TestNinja\obj\Debug\TestNinja.csproj.CoreCompileInputs.cache
 C:\Dev3\Tests\TestNinja\obj\Debug\TestNinja.csproj.Up2Date
 C:\Dev3\Tests\TestNinja\obj\Debug\TestNinja.dll
 C:\Dev3\Tests\TestNinja\obj\Debug\TestNinja.pdb
+C:\Engineering and development\Tests\TestNinja\bin\Debug\TestNinja.dll.config
+C:\Engineering and development\Tests\TestNinja\bin\Debug\TestNinja.dll
+C:\Engineering and development\Tests\TestNinja\bin\Debug\TestNinja.pdb
+C:\Engineering and development\Tests\TestNinja\bin\Debug\EntityFramework.dll
+C:\Engineering and development\Tests\TestNinja\bin\Debug\EntityFramework.SqlServer.dll
+C:\Engineering and development\Tests\TestNinja\bin\Debug\Newtonsoft.Json.dll
+C:\Engineering and development\Tests\TestNinja\bin\Debug\EntityFramework.xml
+C:\Engineering and development\Tests\TestNinja\bin\Debug\EntityFramework.SqlServer.xml
+C:\Engineering and development\Tests\TestNinja\bin\Debug\Newtonsoft.Json.xml
+C:\Engineering and development\Tests\TestNinja\obj\Debug\TestNinja.csproj.AssemblyReference.cache
+C:\Engineering and development\Tests\TestNinja\obj\Debug\TestNinja.csproj.CoreCompileInputs.cache
+C:\Engineering and development\Tests\TestNinja\obj\Debug\TestNinja.csproj.Up2Date
+C:\Engineering and development\Tests\TestNinja\obj\Debug\TestNinja.dll
+C:\Engineering and development\Tests\TestNinja\obj\Debug\TestNinja.pdb

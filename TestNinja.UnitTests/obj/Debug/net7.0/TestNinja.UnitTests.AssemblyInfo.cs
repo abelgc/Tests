@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TestNinja.UnitTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df550e0a7bade1348561feae3daa1d8d6f78245f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+016f4e9174903d9452d7a18fc67102500fad26ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("TestNinja.UnitTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TestNinja.UnitTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -398,10 +398,7 @@
       },
       "TestNinja/1.0.0": {
         "runtime": {
-          "TestNinja.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "TestNinja.dll": {}
         }
       },
       "EntityFramework/6.0.0.0": {
