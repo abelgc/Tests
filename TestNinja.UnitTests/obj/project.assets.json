@@ -1104,25 +1104,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Abel\\.nuget\\packages\\": {},
+    "C:\\Users\\abelc\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Engineering and development\\Tests\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
+      "projectUniqueName": "C:\\Dev3\\Tests\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
       "projectName": "TestNinja.UnitTests",
-      "projectPath": "C:\\Engineering and development\\Tests\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
-      "packagesPath": "C:\\Users\\Abel\\.nuget\\packages\\",
-      "outputPath": "C:\\Engineering and development\\Tests\\TestNinja.UnitTests\\obj\\",
+      "projectPath": "C:\\Dev3\\Tests\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\abelc\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev3\\Tests\\TestNinja.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Abel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\abelc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
@@ -1133,14 +1135,22 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://itartifacts.co.uk/nuget/DerivcoLib/v3/index.json": {},
+        "https://proget.derivcosports.com/nuget/Logging/": {},
+        "https://proget.derivcosports.com/nuget/QA/": {},
+        "https://proget.derivcosports.com/nuget/dashboard/": {},
+        "https://proget.derivcosports.com/nuget/derivcolib.cache": {},
+        "https://proget.derivcosports.com/nuget/nuget.org": {},
+        "https://proget.derivcosports.com/nuget/services": {},
+        "https://proget.derivcosports.com/nuget/sportslibget": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Engineering and development\\Tests\\TestNinja\\TestNinja.csproj": {
-              "projectPath": "C:\\Engineering and development\\Tests\\TestNinja\\TestNinja.csproj"
+            "C:\\Dev3\\Tests\\TestNinja\\TestNinja.csproj": {
+              "projectPath": "C:\\Dev3\\Tests\\TestNinja\\TestNinja.csproj"
             }
           }
         }
@@ -1205,7 +1215,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
