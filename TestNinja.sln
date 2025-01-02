@@ -5,7 +5,9 @@ VisualStudioVersion = 17.10.35027.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja", "TestNinja\TestNinja.csproj", "{7328740E-4B78-464F-8352-65D887F2145F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{80C27034-9F61-4609-A844-ECFF56E3EB03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestNinja.UnitTests", "TestNinja.UnitTests\TestNinja.UnitTests.csproj", "{80C27034-9F61-4609-A844-ECFF56E3EB03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MockTests", "MockTests\MockTests.csproj", "{40E539E8-CB46-449B-99E0-A712C1D94295}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{80C27034-9F61-4609-A844-ECFF56E3EB03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80C27034-9F61-4609-A844-ECFF56E3EB03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80C27034-9F61-4609-A844-ECFF56E3EB03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40E539E8-CB46-449B-99E0-A712C1D94295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40E539E8-CB46-449B-99E0-A712C1D94295}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40E539E8-CB46-449B-99E0-A712C1D94295}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40E539E8-CB46-449B-99E0-A712C1D94295}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C45761E0-D8CA-4023-903C-FCA144290D6F}
 	EndGlobalSection
 EndGlobal

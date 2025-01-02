@@ -1,17 +1,20 @@
 ﻿using FluentAssertions;
+using MockTests.Mocking;
 using TestNinja.Mocking;
-using TestNinja.UnitTests.Mock;
 
-namespace TestNinja.UnitTests.Mocking
+
+namespace MockTests
 {
     [TestFixture]
     public class VideoServiceTests
     {
+
+
         [Test]
         public void ReadVideoTitleFromEmptyFileReturnErrorMessage()
         {
-            var service = new VideoService();
-            var title = service.ReadVideoTitle(new MockFileReader());
+            var service = new VideoService(new MockFileReader());
+            var title = service.ReadVideoTitle();
 
             title.Should().StartWith("Error");
             title.Should().ContainEquivalentOf("Error");
@@ -19,3 +22,4 @@ namespace TestNinja.UnitTests.Mocking
         }
     }
 }
+

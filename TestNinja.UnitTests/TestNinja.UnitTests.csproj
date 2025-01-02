@@ -20,6 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\MockTests\MockTests.csproj" />
     <ProjectReference Include="..\TestNinja\TestNinja.csproj" />
   </ItemGroup>
 

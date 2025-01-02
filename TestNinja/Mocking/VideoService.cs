@@ -8,10 +8,17 @@ namespace TestNinja.Mocking
 {
     public class VideoService
     {
-        public string ReadVideoTitle(IFileReader fileReader)
+        private IFileReader _fileReader;
+
+        public VideoService(IFileReader fileReader = null)
+        {
+            _fileReader = fileReader ?? new FileReader();  //if null means no mock, then nomral class
+        }
+
+        public string ReadVideoTitle()
         {
             // FileReader: Move what touches external resource to extenral class to decouple
-            var str = fileReader.ReadPath("video.txt");
+            var str = _fileReader.ReadPath("video.txt");
             var video = JsonConvert.DeserializeObject<Video>(str);
             if (video == null)
                 return "Error parsing the video.";

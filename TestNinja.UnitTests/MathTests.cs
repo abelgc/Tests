@@ -15,7 +15,7 @@ namespace TestNinja.UnitTests
         }
 
         [Test]
-        public void Add_WhenCalled_ReturnAdditionOfTwoNumbers()
+        public void AddWhenCalledReturnAdditionOfTwoNumbers()
         {
             //Arrange
 

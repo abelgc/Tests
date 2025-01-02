@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GOGSxHa4vtI=",
+  "dgSpecHash": "R8wqjD2nmdc=",
   "success": true,
-  "projectFilePath": "C:\\Dev3\\Tests\\TestNinja.UnitTests\\TestNinja.UnitTests.csproj",
+  "projectFilePath": "C:\\Dev3\\Tests\\MockTests\\MockTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\abelc\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\abelc\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
