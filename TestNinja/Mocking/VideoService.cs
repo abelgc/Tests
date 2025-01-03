@@ -19,7 +19,7 @@ namespace TestNinja.Mocking
         {
             // FileReader: Move what touches external resource to extenral class to decouple
             var str = _fileReader.ReadPath("video.txt");
-            var video = JsonConvert.DeserializeObject<Video>(str);
+            var video = JsonConvert.DeserializeObject<Video>(str); //when title is missing deserializing fails
             if (video == null)
                 return "Error parsing the video.";
             return video.Title;
