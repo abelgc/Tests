@@ -2,17 +2,18 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using System.Linq;
 
 namespace TestNinja.Mocking
 {
     public class VideoService
     {
-        private IFileReader _fileReader;
+        private readonly IFileReader _fileReader;
+        private readonly IVideoRepository _videoRepository;
 
-        public VideoService(IFileReader fileReader = null)
+        public VideoService(IFileReader fileReader = null, IVideoRepository videoRepository = null)
         {
-            _fileReader = fileReader ?? new FileReader();  //if null means no mock, then nomral class
+            _fileReader = fileReader ?? new FileReader();  //if null means no mock, then normal class
+            _videoRepository = videoRepository ?? new VideoRepository();
         }
 
         public string ReadVideoTitle()
@@ -29,30 +30,24 @@ namespace TestNinja.Mocking
         {
             var videoIds = new List<int>();
 
-            using (var context = new VideoContext())
-            {
-                var videos =
-                    (from video in context.Videos
-                     where !video.IsProcessed
-                     select video).ToList();
+            var videos = _videoRepository.GetUnprocessedVideos();
 
-                foreach (var v in videos)
-                    videoIds.Add(v.Id);
+            foreach (var v in videos)
+                videoIds.Add(v.Id);
 
-                return String.Join(",", videoIds);
-            }
+            return String.Join(",", videoIds);
         }
     }
+}
 
-    public class Video
-    {
-        public int Id { get; set; }
-        public string Title { get; set; }
-        public bool IsProcessed { get; set; }
-    }
+public class Video
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public bool IsProcessed { get; set; }
+}
 
-    public class VideoContext : DbContext
-    {
-        public DbSet<Video> Videos { get; set; }
-    }
+public class VideoContext : DbContext
+{
+    public DbSet<Video> Videos { get; set; }
 }

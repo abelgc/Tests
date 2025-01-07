@@ -342,3 +342,8 @@ C:\Dev3\Tests\TestNinja.UnitTests\obj\Debug\net7.0\refint\TestNinja.UnitTests.dl
 C:\Dev3\Tests\TestNinja.UnitTests\obj\Debug\net7.0\TestNinja.UnitTests.pdb
 C:\Dev3\Tests\TestNinja.UnitTests\obj\Debug\net7.0\TestNinja.UnitTests.genruntimeconfig.cache
 C:\Dev3\Tests\TestNinja.UnitTests\obj\Debug\net7.0\ref\TestNinja.UnitTests.dll
+C:\Dev3\Tests\TestNinja.UnitTests\bin\Debug\net7.0\CoverletSourceRootsMapping
+C:\Dev3\Tests\TestNinja.UnitTests\bin\Debug\net7.0\MockTests.deps.json
+C:\Dev3\Tests\TestNinja.UnitTests\bin\Debug\net7.0\MockTests.runtimeconfig.json
+C:\Dev3\Tests\TestNinja.UnitTests\bin\Debug\net7.0\MockTests.dll
+C:\Dev3\Tests\TestNinja.UnitTests\bin\Debug\net7.0\MockTests.pdb

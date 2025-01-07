@@ -6,6 +6,7 @@
         {
             var service = new VideoService();
             var title = service.ReadVideoTitle();//DI method
+            var unprocessedVideos = service.GetUnprocessedVideosAsCsv();
         }
     }
 }
