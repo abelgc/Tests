@@ -1,28 +1,33 @@
-﻿using System.Net;
+﻿using System;
+using System.Net;
 
 namespace TestNinja.Mocking
 {
-    public class InstallerHelper
+
+    public class InstallerHelper : IInstallerHelper
     {
-        private string _setupDestinationFile;
+        private readonly IWebClient _webClient;
+        private readonly string _setupDestinationFile;
+
+        public InstallerHelper(IWebClient webClient, string setupDestinationFile)
+        {
+            _webClient = webClient ?? throw new ArgumentNullException(nameof(webClient));
+            _setupDestinationFile = setupDestinationFile ?? throw new ArgumentNullException(nameof(setupDestinationFile));
+        }
 
         public bool DownloadInstaller(string customerName, string installerName)
         {
-            var client = new WebClient();
             try
             {
-                client.DownloadFile(
-                    string.Format("http://example.com/{0}/{1}",
-                        customerName,
-                        installerName),
-                    _setupDestinationFile);
+                _webClient.DownloadFile($"http://myurl.com/{customerName}/{installerName}", _setupDestinationFile);
 
                 return true;
             }
             catch (WebException)
             {
-                return false; 
+                return false;
             }
         }
     }
+
 }
