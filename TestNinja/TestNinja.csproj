@@ -45,6 +45,8 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -59,8 +61,11 @@
     <Compile Include="Fundamentals\Reservation.cs" />
     <Compile Include="Fundamentals\Stack.cs" />
     <Compile Include="Mocking\BookingHelper.cs" />
+    <Compile Include="Mocking\BookingRepository.cs" />
     <Compile Include="Mocking\EmployeeController.cs" />
+    <Compile Include="Mocking\EmployeeService.cs" />
     <Compile Include="Mocking\FileReader.cs" />
+    <Compile Include="Mocking\IEmployeeService.cs" />
     <Compile Include="Mocking\IFileReader.cs" />
     <Compile Include="Mocking\IInstallerHelper.cs" />
     <Compile Include="Mocking\InstallerHelper.cs" />

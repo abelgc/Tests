@@ -7,6 +7,8 @@ namespace MockTests.Mocking
     [TestFixture]
     public class InstallerHelperTests
     {
+        private const string CustomerName = "Suresha Das";
+        private const string InstallerName = "admin";
         private IWebClient _webClientMock;
         private InstallerHelper _installerHelper;
         private string _setupDestinationFile;
@@ -23,15 +25,12 @@ namespace MockTests.Mocking
         public void DownloadInstaller_WhenCalled_DownloadsFileFromUrl()
         {
             // Arrange
-            var customerName = "Suresha Das";
-            var installerName = "admin";
-
             // Act
-            _installerHelper.DownloadInstaller(customerName, installerName);
+            _installerHelper.DownloadInstaller(CustomerName, InstallerName);
 
             // Assert
             _webClientMock.Received().DownloadFile(
-                Arg.Is<string>(s => s == $"http://myurl.com/{customerName}/{installerName}"),
+                Arg.Is<string>(s => s == $"http://myurl.com/{CustomerName}/{InstallerName}"),
                 Arg.Is<string>(s => s == _setupDestinationFile));
         }
 
@@ -42,9 +41,7 @@ namespace MockTests.Mocking
             _webClientMock.When(x => x.DownloadFile(Arg.Any<string>(), Arg.Any<string>()))
                      .Do(x => { throw new WebException(); });
 
-            var customerName = "Suresha Das";
-            var installerName = "admin";
-            var restult = _installerHelper.DownloadInstaller(customerName, installerName);
+            var restult = _installerHelper.DownloadInstaller(CustomerName, InstallerName);
 
             // Act & Assert
             Assert.That(restult, Is.False);
